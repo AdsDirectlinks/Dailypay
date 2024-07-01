@@ -1,0 +1,97 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header{
+    width: 100%;
+    padding: 20px ;
+    /* display: flex; */
+    box-shadow: 2px 2px 7px black;
+}
+
+header nav ul{
+    display: flex;
+   
+}
+
+header nav ul li{
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+}
+
+header nav ul li a:hover{
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px black;
+    color: black;
+}
+
+.parent-container{
+    width: 95%;
+    padding: 20px;
+}
+
+.parent-container .content{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.parent-container .content .image img{
+    width: 100%;
+}
+
+.parent-container .content .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.parent-container .content .info h1{
+    /* font-size: 40px; */
+    font-size: clamp(40px, 5vw, 20px);
+}
+
+.parent-container .content .info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.parent-container .content .info p button{
+    display: block;
+    border: none;
+    margin: 30px 0 0 0;
+}
+
+.parent-container .content .info p button a{
+    color: white;
+    background-color: green;
+    padding: 12px 40px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.parent-container .content .info p button a:hover{
+    color: black;
+    box-shadow: 2px 2px 7px black;
+}
+
+
+@media screen and (max-width:650px){
+    .parent-container .content{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+}
